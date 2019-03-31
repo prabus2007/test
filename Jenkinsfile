@@ -7,11 +7,11 @@ pipeline {
 
 	}
 	}
-	stage('two') {
-	steps {
-	input('Do you want to proceed ?')
-	}
-	}
+        stage('git clone') {
+            steps {
+                sh 'sudo rm -r *;sudo git clone https://github.com/prabus2007/test.git'
+            }
+           } 
 	
 	}
 }
