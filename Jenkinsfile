@@ -1,7 +1,5 @@
 #!/usr/bin/env groovy
 
-pipeline {
-	node {
-		checkout scm
-	}
-}
+def username = 'Jenkins'
+echo 'Hello Mr. ${username}'
+echo "I said, Hello Mr. ${username}"
